@@ -1,0 +1,5 @@
+To compile and install the extension, run compile.sh.
+
+The bloom implementation is from: https://github.com/jvirkki/libbloom.git 
+
+Also see the [LIP paper](https://www.vldb.org/pvldb/vol10/p889-zhu.pdf).
