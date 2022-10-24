@@ -12,3 +12,4 @@ queries/JOB_test_n_join_group_6
 # queries/tpch
 # queries/tpch_pg_lip
 .DS_Store
+.ipynb_checkpoints
