@@ -1,0 +1,122 @@
+2022-04-19 15:06:50.77 Server      Setup step is FORCE copying system data file 'C:\templatedata\model_replicatedmaster.mdf' to '/mnt/mssql_storage/model_replicatedmaster.mdf'.
+2022-04-19 15:06:50.88 Server      Setup step is FORCE copying system data file 'C:\templatedata\model_replicatedmaster.ldf' to '/mnt/mssql_storage/model_replicatedmaster.ldf'.
+2022-04-19 15:06:50.89 Server      Setup step is FORCE copying system data file 'C:\templatedata\model_msdbdata.mdf' to '/mnt/mssql_storage/model_msdbdata.mdf'.
+2022-04-19 15:06:50.92 Server      Setup step is FORCE copying system data file 'C:\templatedata\model_msdblog.ldf' to '/mnt/mssql_storage/model_msdblog.ldf'.
+2022-04-19 15:06:51.04 Server      Microsoft SQL Server 2019 (RTM-CU15) (KB5008996) - 15.0.4198.2 (X64) 
+	Jan 12 2022 22:30:08 
+	Copyright (C) 2019 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 20.04.4 LTS) <X64>
+2022-04-19 15:06:51.06 Server      UTC adjustment: -5:00
+2022-04-19 15:06:51.07 Server      (c) Microsoft Corporation.
+2022-04-19 15:06:51.07 Server      All rights reserved.
+2022-04-19 15:06:51.07 Server      Server process ID is 404.
+2022-04-19 15:06:51.08 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2022-04-19 15:06:51.08 Server      Registry startup parameters: 
+	 -d /mnt/mssql_storage/master.mdf
+	 -l /mnt/mssql_storage/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2022-04-19 15:06:51.09 Server      The following SQL Server startup parameters are either deprecated or incorrectly specified: 
+	 "start"
+2022-04-19 15:06:51.10 Server      Error: 17113, Severity: 16, State: 1.
+2022-04-19 15:06:51.10 Server      Error 5(Access is denied.) occurred while opening file '/mnt/mssql_storage/master.mdf' to obtain configuration information at startup. An invalid startup option might have caused the error. Verify your startup options, and correct or remove them if necessary.
+2022-04-19 15:22:39.81 Server      Setup step is FORCE copying system data file 'C:\templatedata\model_replicatedmaster.mdf' to '/mnt/mssql_storage/model_replicatedmaster.mdf'.
+2022-04-19 15:22:39.93 Server      Setup step is FORCE copying system data file 'C:\templatedata\model_replicatedmaster.ldf' to '/mnt/mssql_storage/model_replicatedmaster.ldf'.
+2022-04-19 15:22:39.94 Server      Setup step is FORCE copying system data file 'C:\templatedata\model_msdbdata.mdf' to '/mnt/mssql_storage/model_msdbdata.mdf'.
+2022-04-19 15:22:39.96 Server      Setup step is FORCE copying system data file 'C:\templatedata\model_msdblog.ldf' to '/mnt/mssql_storage/model_msdblog.ldf'.
+2022-04-19 15:22:40.09 Server      Microsoft SQL Server 2019 (RTM-CU15) (KB5008996) - 15.0.4198.2 (X64) 
+	Jan 12 2022 22:30:08 
+	Copyright (C) 2019 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 20.04.4 LTS) <X64>
+2022-04-19 15:22:40.10 Server      UTC adjustment: -5:00
+2022-04-19 15:22:40.10 Server      (c) Microsoft Corporation.
+2022-04-19 15:22:40.10 Server      All rights reserved.
+2022-04-19 15:22:40.11 Server      Server process ID is 412.
+2022-04-19 15:22:40.11 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2022-04-19 15:22:40.12 Server      Registry startup parameters: 
+	 -d /mnt/mssql_storage/master.mdf
+	 -l /mnt/mssql_storage/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2022-04-19 15:22:40.13 Server      The following SQL Server startup parameters are either deprecated or incorrectly specified: 
+	 "start"
+2022-04-19 15:22:40.13 Server      SQL Server detected 2 sockets with 10 cores per socket and 20 logical processors per socket, 40 total logical processors; using 40 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
+2022-04-19 15:22:40.15 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
+2022-04-19 15:22:40.16 Server      Detected 205776 MB of RAM. This is an informational message; no user action is required.
+2022-04-19 15:22:40.17 Server      Using conventional memory in the memory manager.
+2022-04-19 15:22:40.19 Server      Page exclusion bitmap is enabled.
+2022-04-19 15:22:40.36 Server      Buffer pool extension is not supported on Linux platform.
+2022-04-19 15:22:40.37 Server      Buffer Pool: Allocating 33554432 bytes for 32133120 hashPages.
+2022-04-19 15:22:40.67 Server      Automatic soft-NUMA was enabled because SQL Server has detected hardware NUMA nodes with greater than 8 physical cores.
+2022-04-19 15:22:41.13 Server      Buffer pool extension is already disabled. No action is necessary.
+2022-04-19 15:22:42.84 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
+2022-04-19 15:22:42.91 Server      Query Store settings initialized with enabled = 1, 
+2022-04-19 15:22:42.94 Server      The maximum number of dedicated administrator connections for this instance is '1'
+2022-04-19 15:22:42.95 Server      Node configuration: node 0: CPU mask: 0x0000000000055555:0 Active CPU mask: 0x0000000000055555:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+2022-04-19 15:22:42.97 Server      Node configuration: node 1: CPU mask: 0x00000000000aaaaa:0 Active CPU mask: 0x00000000000aaaaa:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+2022-04-19 15:22:42.98 Server      Node configuration: node 2: CPU mask: 0x0000005555500000:0 Active CPU mask: 0x0000005555500000:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+2022-04-19 15:22:43.00 Server      Node configuration: node 3: CPU mask: 0x000000aaaaa00000:0 Active CPU mask: 0x000000aaaaa00000:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+2022-04-19 15:22:43.25 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
+2022-04-19 15:22:43.26 Server      Lock partitioning is enabled.  This is an informational message only. No user action is required.
+2022-04-19 15:22:43.31 Server      In-Memory OLTP initialized on highend machine.
+2022-04-19 15:22:43.34 Server      [INFO] Created Extended Events session 'hkenginexesession'
+2022-04-19 15:22:43.35 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
+ForceFlush is enabled for this instance. 
+2022-04-19 15:22:43.39 Server      Total Log Writer threads: 5. This is an informational message; no user action is required.
+2022-04-19 15:22:43.42 Server      clwb is selected for pmem flush operation.
+2022-04-19 15:22:43.43 Server      Software Usage Metrics is disabled.
+2022-04-19 15:22:43.45 Server      CLR version v4.0.30319 loaded.
+2022-04-19 15:22:43.46 spid14s     [1]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1.
+2022-04-19 15:22:43.47 spid14s     Starting up database 'master'.
+ForceFlush feature is enabled for log durability.
+2022-04-19 15:22:43.91 Server      Common language runtime (CLR) functionality initialized.
+2022-04-19 15:22:43.94 spid14s     Resource governor reconfiguration succeeded.
+2022-04-19 15:22:43.94 spid14s     SQL Server Audit is starting the audits. This is an informational message. No user action is required.
+2022-04-19 15:22:43.96 spid14s     SQL Server Audit has started the audits. This is an informational message. No user action is required.
+2022-04-19 15:22:44.05 spid14s     SQL Trace ID 1 was started by login "sa".
+2022-04-19 15:22:44.07 spid14s     Server name is '9d2f00febd13'. This is an informational message only. No user action is required.
+2022-04-19 15:22:44.11 spid37s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
+2022-04-19 15:22:44.12 spid40s     [4]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1.
+2022-04-19 15:22:44.12 spid16s     [32767]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1.
+2022-04-19 15:22:44.12 spid41s     [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1.
+2022-04-19 15:22:44.12 spid42s     [6]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1.
+2022-04-19 15:22:44.13 spid37s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
+2022-04-19 15:22:44.14 spid40s     Starting up database 'msdb'.
+2022-04-19 15:22:44.15 spid16s     Starting up database 'mssqlsystemresource'.
+2022-04-19 15:22:44.17 spid41s     Starting up database 'imdb_frozen'.
+2022-04-19 15:22:44.18 spid42s     Starting up database 'imdb'.
+2022-04-19 15:22:44.20 spid36s     A self-generated certificate was successfully loaded for encryption.
+2022-04-19 15:22:44.23 spid16s     The resource database build version is 15.00.4198. This is an informational message only. No user action is required.
+2022-04-19 15:22:44.26 spid36s     Server is listening on [ 'any' <ipv6> 1433].
+2022-04-19 15:22:44.28 spid36s     Server is listening on [ 'any' <ipv4> 1433].
+2022-04-19 15:22:44.30 Server      Server is listening on [ ::1 <ipv6> 1434].
+2022-04-19 15:22:44.31 Server      Server is listening on [ 127.0.0.1 <ipv4> 1434].
+2022-04-19 15:22:44.31 Server      Dedicated admin connection support was established for listening locally on port 1434.
+2022-04-19 15:22:44.32 spid16s     [3]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1.
+2022-04-19 15:22:44.33 spid36s     Server is listening on [ ::1 <ipv6> 1431].
+2022-04-19 15:22:44.34 spid16s     Starting up database 'model'.
+2022-04-19 15:22:44.34 spid36s     Server is listening on [ 127.0.0.1 <ipv4> 1431].
+2022-04-19 15:22:44.35 spid36s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
+2022-04-19 15:22:44.40 spid41s     Parallel redo is started for database 'imdb_frozen' with worker pool size [16].
+2022-04-19 15:22:44.41 spid42s     Parallel redo is started for database 'imdb' with worker pool size [16].
+2022-04-19 15:22:44.46 spid16s     Clearing tempdb database.
+2022-04-19 15:22:44.49 spid42s     Parallel redo is shutdown for database 'imdb' with worker pool size [16].
+2022-04-19 15:22:44.51 spid40s     Parallel redo is shutdown for database 'imdb_frozen' with worker pool size [16].
+2022-04-19 15:22:45.23 spid16s     [2]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1.
+2022-04-19 15:22:45.24 spid16s     Starting up database 'tempdb'.
+2022-04-19 15:22:57.92 spid16s     The tempdb database has 8 data file(s).
+2022-04-19 15:22:57.93 spid37s     The Service Broker endpoint is in disabled or stopped state.
+2022-04-19 15:22:57.94 spid37s     The Database Mirroring endpoint is in disabled or stopped state.
+2022-04-19 15:22:57.95 spid14s     Recovery is complete. This is an informational message only. No user action is required.
+2022-04-19 15:22:57.95 spid37s     Service Broker manager has started.
+2022-04-19 15:27:51.50 spid51      Attempting to load library 'xplog70.dll' into memory. This is an informational message only. No user action is required.
+2022-04-19 15:27:51.61 spid51      Using 'xplog70.dll' version '2019.150.4198' to execute extended stored procedure 'xp_msver'. This is an informational message only; no user action is required.
+2022-04-19 15:35:49.50 spid52      Setting database option AUTO_CREATE_STATISTICS to ON for database 'imdb'.
+2022-04-19 15:36:18.40 spid52      Setting database option AUTO_UPDATE_STATISTICS to ON for database 'imdb'.
+2022-04-24 01:08:24.16 spid52      [7]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1.
+2022-04-24 01:08:24.17 spid52      Starting up database 'tpch_sf1'.
+2022-04-24 01:08:24.26 spid52      Parallel redo is started for database 'tpch_sf1' with worker pool size [16].
+2022-04-24 01:08:24.29 spid52      Parallel redo is shutdown for database 'tpch_sf1' with worker pool size [16].
+2022-04-24 01:08:28.13 spid52      [8]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1.
+2022-04-24 01:08:28.15 spid52      Starting up database 'tpch_sf10'.
+2022-04-24 01:08:28.23 spid52      Parallel redo is started for database 'tpch_sf10' with worker pool size [16].
+2022-04-24 01:08:28.26 spid52      Parallel redo is shutdown for database 'tpch_sf10' with worker pool size [16].
+

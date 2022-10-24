@@ -1,0 +1,164 @@
+{
+    "10_1_fixed.sql": {
+        "actual": 1147081,
+        "estimated": 546504,
+        "estimation diff": "-600577",
+        "q-error": 2.098943466104548
+    },
+    "10_2_fixed.sql": {
+        "actual": 1145402,
+        "estimated": 535246,
+        "estimation diff": "-610156",
+        "q-error": 2.1399543387526485
+    },
+    "10_3_fixed.sql": {
+        "actual": 1147414,
+        "estimated": 556280,
+        "estimation diff": "-591134",
+        "q-error": 2.06265549723161
+    },
+    "11_1_fixed.sql": {
+        "actual": 320720,
+        "estimated": 47060,
+        "estimation diff": "-273660",
+        "q-error": 6.815129621759456
+    },
+    "11_2_fixed.sql": {
+        "actual": 314720,
+        "estimated": 47060,
+        "estimation diff": "-267660",
+        "q-error": 6.68763280917977
+    },
+    "11_3_fixed.sql": {
+        "actual": 314640,
+        "estimated": 47060,
+        "estimation diff": "-267580",
+        "q-error": 6.685932851678708
+    },
+    "12_1_fixed.sql": {
+        "actual": 312377,
+        "estimated": 286609,
+        "estimation diff": "-25768",
+        "q-error": 1.0899064579270017
+    },
+    "12_2_fixed.sql": {
+        "actual": 312338,
+        "estimated": 288155,
+        "estimation diff": "-24183",
+        "q-error": 1.0839235827939824
+    },
+    "12_3_fixed.sql": {
+        "actual": 312276,
+        "estimated": 286239,
+        "estimation diff": "-26037",
+        "q-error": 1.0909624474652302
+    },
+    "13_1_fixed.sql": {
+        "actual": 1500000,
+        "estimated": 1499897,
+        "estimation diff": "-103",
+        "q-error": 1.0000686713821016
+    },
+    "13_2_fixed.sql": {
+        "actual": 1500000,
+        "estimated": 1499897,
+        "estimation diff": "-103",
+        "q-error": 1.0000686713821016
+    },
+    "13_3_fixed.sql": {
+        "actual": 1500000,
+        "estimated": 1499897,
+        "estimation diff": "-103",
+        "q-error": 1.0000686713821016
+    },
+    "14_1_fixed.sql": {
+        "actual": 749009,
+        "estimated": 747923,
+        "estimation diff": "-1086",
+        "q-error": 1.0014520211305173
+    },
+    "14_2_fixed.sql": {
+        "actual": 773192,
+        "estimated": 808878,
+        "estimation diff": "+35686",
+        "q-error": 1.0461541247193453
+    },
+    "14_3_fixed.sql": {
+        "actual": 772500,
+        "estimated": 771115,
+        "estimation diff": "-1385",
+        "q-error": 1.001796100451943
+    },
+    "16_1_fixed.sql": {
+        "actual": 1187625,
+        "estimated": 603278,
+        "estimation diff": "-584347",
+        "q-error": 1.9686197739682203
+    },
+    "16_2_fixed.sql": {
+        "actual": 1186629,
+        "estimated": 593076,
+        "estimation diff": "-593553",
+        "q-error": 2.000804281407442
+    },
+    "16_3_fixed.sql": {
+        "actual": 1184507,
+        "estimated": 586159,
+        "estimation diff": "-598348",
+        "q-error": 2.020794699049234
+    },
+    "18_1_fixed.sql": {
+        "actual": 693,
+        "estimated": 554156,
+        "estimation diff": "+553463",
+        "q-error": 799.6479076479077
+    },
+    "18_2_fixed.sql": {
+        "actual": 525,
+        "estimated": 554156,
+        "estimation diff": "+553631",
+        "q-error": 1055.5352380952381
+    },
+    "18_3_fixed.sql": {
+        "actual": 777,
+        "estimated": 554156,
+        "estimation diff": "+553379",
+        "q-error": 713.1994851994853
+    },
+    "19_1_fixed.sql": {
+        "actual": 1153,
+        "estimated": 1116,
+        "estimation diff": "-37",
+        "q-error": 1.0331541218637992
+    },
+    "19_2_fixed.sql": {
+        "actual": 1151,
+        "estimated": 1143,
+        "estimation diff": "-8",
+        "q-error": 1.0069991251093613
+    },
+    "19_3_fixed.sql": {
+        "actual": 1136,
+        "estimated": 1121,
+        "estimation diff": "-15",
+        "q-error": 1.0133809099018734
+    },
+    "1_1_fixed.sql": {
+        "actual": 1,
+        "estimated": 1,
+        "estimation diff": "+0",
+        "q-error": 1.0
+    },
+    "1_2_fixed.sql": {
+        "actual": 1,
+        "estimated": 1,
+        "estimation diff": "+0",
+        "q-error": 1.0
+    },
+    "1_3_fixed.sql": {
+        "actual": 1,
+        "estimated": 1,
+        "estimation diff": "+0",
+        "q-error": 1.0
+    }
+}

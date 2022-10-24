@@ -5,6 +5,7 @@
 # make install
 
 # For any installation of postgres (pg12) 
+# replace /data/postgresql-12.5 with your postgres installation directory
 cc -pthread -fPIC -I /data/postgresql-12.5/include/server/ -c pg_lip_bloom.c
 cc -pthread -fPIC -I /data/postgresql-12.5/include/server/ -c bloom.c
 cc -pthread -shared -I /data/postgresql-12.5/include/server/ -o pg_lip_bloom.so ./pg_lip_bloom.o ./bloom.o ./build/murmurhash2.o

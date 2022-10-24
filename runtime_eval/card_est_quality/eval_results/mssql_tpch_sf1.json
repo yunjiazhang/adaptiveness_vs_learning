@@ -1,0 +1,254 @@
+{
+    "10_1_fixed.sql": {
+        "actual": 37675,
+        "estimated": 780336,
+        "estimation diff": "+742661",
+        "q-error": 20.712302587923027
+    },
+    "10_2_fixed.sql": {
+        "actual": 114347,
+        "estimated": 56890,
+        "estimation diff": "-57457",
+        "q-error": 2.0099666022148006
+    },
+    "10_3_fixed.sql": {
+        "actual": 75599,
+        "estimated": 37443,
+        "estimation diff": "-38156",
+        "q-error": 2.019042277595278
+    },
+    "11_1_fixed.sql": {
+        "actual": 30160,
+        "estimated": 32000,
+        "estimation diff": "+1840",
+        "q-error": 1.0610079575596818
+    },
+    "11_2_fixed.sql": {
+        "actual": 33600,
+        "estimated": 32000,
+        "estimation diff": "-1600",
+        "q-error": 1.05
+    },
+    "11_3_fixed.sql": {
+        "actual": 28960,
+        "estimated": 32000,
+        "estimation diff": "+3040",
+        "q-error": 1.1049723756906078
+    },
+    "12_1_fixed.sql": {
+        "actual": 31024,
+        "estimated": 308413,
+        "estimation diff": "+277389",
+        "q-error": 9.94111010830325
+    },
+    "12_2_fixed.sql": {
+        "actual": 31060,
+        "estimated": 307789,
+        "estimation diff": "+276729",
+        "q-error": 9.90949774629749
+    },
+    "12_3_fixed.sql": {
+        "actual": 30849,
+        "estimated": 307789,
+        "estimation diff": "+276940",
+        "q-error": 9.977276410904729
+    },
+    "13_1_fixed.sql": {
+        "actual": 150000,
+        "estimated": 150000,
+        "estimation diff": "+0",
+        "q-error": 1.0
+    },
+    "13_2_fixed.sql": {
+        "actual": 150000,
+        "estimated": 150000,
+        "estimation diff": "+0",
+        "q-error": 1.0
+    },
+    "13_3_fixed.sql": {
+        "actual": 150000,
+        "estimated": 150000,
+        "estimation diff": "+0",
+        "q-error": 1.0
+    },
+    "14_1_fixed.sql": {
+        "actual": 74966,
+        "estimated": 71205,
+        "estimation diff": "-3761",
+        "q-error": 1.05281932448564
+    },
+    "14_2_fixed.sql": {
+        "actual": 77203,
+        "estimated": 78504,
+        "estimation diff": "+1301",
+        "q-error": 1.016851676748313
+    },
+    "14_3_fixed.sql": {
+        "actual": 77661,
+        "estimated": 75746,
+        "estimation diff": "-1915",
+        "q-error": 1.0252818630686769
+    },
+    "16_1_fixed.sql": {
+        "actual": 119852,
+        "estimated": 125422,
+        "estimation diff": "+5570",
+        "q-error": 1.0464739845809832
+    },
+    "16_2_fixed.sql": {
+        "actual": 119170,
+        "estimated": 123533,
+        "estimation diff": "+4363",
+        "q-error": 1.0366115633129143
+    },
+    "16_3_fixed.sql": {
+        "actual": 119083,
+        "estimated": 123544,
+        "estimation diff": "+4461",
+        "q-error": 1.0374612665115928
+    },
+    "18_1_fixed.sql": {
+        "actual": 63,
+        "estimated": 5997640,
+        "estimation diff": "+5997577",
+        "q-error": 95200.63492063493
+    },
+    "18_2_fixed.sql": {
+        "actual": 63,
+        "estimated": 5997640,
+        "estimation diff": "+5997577",
+        "q-error": 95200.63492063493
+    },
+    "18_3_fixed.sql": {
+        "actual": 70,
+        "estimated": 5997640,
+        "estimation diff": "+5997570",
+        "q-error": 85680.57142857143
+    },
+    "19_1_fixed.sql": {
+        "actual": 136,
+        "estimated": 5631,
+        "estimation diff": "+5495",
+        "q-error": 41.404411764705884
+    },
+    "19_2_fixed.sql": {
+        "actual": 120,
+        "estimated": 6053,
+        "estimation diff": "+5933",
+        "q-error": 50.44166666666667
+    },
+    "19_3_fixed.sql": {
+        "actual": 115,
+        "estimated": 5707,
+        "estimation diff": "+5592",
+        "q-error": 49.62608695652174
+    },
+    "1_1_fixed.sql": {
+        "actual": 5934362,
+        "estimated": 5926230,
+        "estimation diff": "-8132",
+        "q-error": 1.001372204588752
+    },
+    "1_2_fixed.sql": {
+        "actual": 5616427,
+        "estimated": 5627300,
+        "estimation diff": "+10873",
+        "q-error": 1.0019359283045965
+    },
+    "1_3_fixed.sql": {
+        "actual": 5894737,
+        "estimated": 5890170,
+        "estimation diff": "-4567",
+        "q-error": 1.000775359624595
+    },
+    "2_1_fixed.sql": {
+        "actual": 496,
+        "estimated": 356,
+        "estimation diff": "-140",
+        "q-error": 1.3932584269662922
+    },
+    "2_2_fixed.sql": {
+        "actual": 477,
+        "estimated": 362,
+        "estimation diff": "-115",
+        "q-error": 1.3176795580110496
+    },
+    "2_3_fixed.sql": {
+        "actual": 482,
+        "estimated": 369,
+        "estimation diff": "-113",
+        "q-error": 1.3062330623306233
+    },
+    "3_1_fixed.sql": {
+        "actual": 30285,
+        "estimated": 479993,
+        "estimation diff": "+449708",
+        "q-error": 15.849199273567773
+    },
+    "3_2_fixed.sql": {
+        "actual": 29979,
+        "estimated": 481362,
+        "estimation diff": "+451383",
+        "q-error": 16.05663964775343
+    },
+    "3_3_fixed.sql": {
+        "actual": 30656,
+        "estimated": 486938,
+        "estimation diff": "+456282",
+        "q-error": 15.883937891440501
+    },
+    "4_1_fixed.sql": {
+        "actual": 57708,
+        "estimated": 1406,
+        "estimation diff": "-56302",
+        "q-error": 41.04409672830725
+    },
+    "4_2_fixed.sql": {
+        "actual": 37774,
+        "estimated": 935,
+        "estimation diff": "-36839",
+        "q-error": 40.4
+    },
+    "4_3_fixed.sql": {
+        "actual": 38433,
+        "estimated": 963,
+        "estimation diff": "-37470",
+        "q-error": 39.90965732087228
+    },
+    "5_1_fixed.sql": {
+        "actual": 7540,
+        "estimated": 7326,
+        "estimation diff": "-214",
+        "q-error": 1.0292110292110292
+    },
+    "5_2_fixed.sql": {
+        "actual": 14457,
+        "estimated": 22582,
+        "estimation diff": "+8125",
+        "q-error": 1.5620114823269005
+    },
+    "5_3_fixed.sql": {
+        "actual": 7266,
+        "estimated": 7257,
+        "estimation diff": "-9",
+        "q-error": 1.0012401818933443
+    },
+    "6_1_fixed.sql": {
+        "actual": 119208,
+        "estimated": 395542,
+        "estimation diff": "+276334",
+        "q-error": 3.318082679014831
+    },
+    "6_2_fixed.sql": {
+        "actual": 113818,
+        "estimated": 389762,
+        "estimation diff": "+275944",
+        "q-error": 3.424431987910524
+    },
+    "6_3_fixed.sql": {
+        "actual": 151096,
+        "estimated": 520696,
+        "estimation diff": "+369600",
+        "q-error": 3.4461269656377405
+    }
+}

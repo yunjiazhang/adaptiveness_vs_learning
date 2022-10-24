@@ -1,0 +1,422 @@
+{
+    "1.sql": {
+        "actual": 715,
+        "estimated": 3463,
+        "estimation diff": "+2748",
+        "q-error": 4.8433566433566435
+    },
+    "2.sql": {
+        "actual": 9,
+        "estimated": 3,
+        "estimation diff": "-6",
+        "q-error": 3.0
+    },
+    "3.sql": {
+        "actual": 47,
+        "estimated": 235,
+        "estimation diff": "+188",
+        "q-error": 5.0
+    },
+    "4.sql": {
+        "actual": 16,
+        "estimated": 10,
+        "estimation diff": "-6",
+        "q-error": 1.6
+    },
+    "5.sql": {
+        "actual": 148552,
+        "estimated": 5625,
+        "estimation diff": "-142927",
+        "q-error": 26.409244444444443
+    },
+    "6.sql": {
+        "actual": 62682311,
+        "estimated": 46335369,
+        "estimation diff": "-16346942",
+        "q-error": 1.3527961976519491
+    },
+    "7.sql": {
+        "actual": 11990578,
+        "estimated": 10885095,
+        "estimation diff": "-1105483",
+        "q-error": 1.1015593341169738
+    },
+    "8.sql": {
+        "actual": 157041640,
+        "estimated": 130850413,
+        "estimation diff": "-26191227",
+        "q-error": 1.200161592153324
+    },
+    "9.sql": {
+        "actual": 850677,
+        "estimated": 179246,
+        "estimation diff": "-671431",
+        "q-error": 4.745863227073407
+    },
+    "10.sql": {
+        "actual": 179616,
+        "estimated": 40937,
+        "estimation diff": "-138679",
+        "q-error": 4.387620001465667
+    },
+    "11.sql": {
+        "actual": 2031666,
+        "estimated": 578980,
+        "estimation diff": "-1452686",
+        "q-error": 3.5090434902760026
+    },
+    "12.sql": {
+        "actual": 6333736,
+        "estimated": 1699736,
+        "estimation diff": "-4634000",
+        "q-error": 3.7263057321842923
+    },
+    "13.sql": {
+        "actual": 1931628,
+        "estimated": 458559,
+        "estimation diff": "-1473069",
+        "q-error": 4.212387064696146
+    },
+    "14.sql": {
+        "actual": 12738520,
+        "estimated": 5118882,
+        "estimation diff": "-7619638",
+        "q-error": 2.4885355825744764
+    },
+    "15.sql": {
+        "actual": 1224,
+        "estimated": 148,
+        "estimation diff": "-1076",
+        "q-error": 8.27027027027027
+    },
+    "16.sql": {
+        "actual": 13221,
+        "estimated": 58473,
+        "estimation diff": "+45252",
+        "q-error": 4.4227365554799185
+    },
+    "17.sql": {
+        "actual": 33,
+        "estimated": 2,
+        "estimation diff": "-31",
+        "q-error": 16.5
+    },
+    "18.sql": {
+        "actual": 1224,
+        "estimated": 1092,
+        "estimation diff": "-132",
+        "q-error": 1.120879120879121
+    },
+    "19.sql": {
+        "actual": 114182642,
+        "estimated": 57915781,
+        "estimation diff": "-56266861",
+        "q-error": 1.971529003467984
+    },
+    "20.sql": {
+        "actual": 4533382,
+        "estimated": 238078,
+        "estimation diff": "-4295304",
+        "q-error": 19.04158301060997
+    },
+    "21.sql": {
+        "actual": 695701,
+        "estimated": 50567,
+        "estimation diff": "-645134",
+        "q-error": 13.758004232009018
+    },
+    "22.sql": {
+        "actual": 21454165,
+        "estimated": 788281,
+        "estimation diff": "-20665884",
+        "q-error": 27.216392377844958
+    },
+    "23.sql": {
+        "actual": 13355828,
+        "estimated": 3143586,
+        "estimation diff": "-10212242",
+        "q-error": 4.248596348246875
+    },
+    "24.sql": {
+        "actual": 4450853,
+        "estimated": 648820,
+        "estimation diff": "-3802033",
+        "q-error": 6.859919546253198
+    },
+    "25.sql": {
+        "actual": 794591,
+        "estimated": 230825,
+        "estimation diff": "-563766",
+        "q-error": 3.4423957543593633
+    },
+    "26.sql": {
+        "actual": 4893440,
+        "estimated": 988032,
+        "estimation diff": "-3905408",
+        "q-error": 4.9527140821349915
+    },
+    "27.sql": {
+        "actual": 1381288,
+        "estimated": 273135,
+        "estimation diff": "-1108153",
+        "q-error": 5.057162209163967
+    },
+    "28.sql": {
+        "actual": 8720023,
+        "estimated": 2352998,
+        "estimation diff": "-6367025",
+        "q-error": 3.7059202770253097
+    },
+    "29.sql": {
+        "actual": 2873214,
+        "estimated": 511021,
+        "estimation diff": "-2362193",
+        "q-error": 5.622496922827046
+    },
+    "30.sql": {
+        "actual": 56965403,
+        "estimated": 19537208,
+        "estimation diff": "-37428195",
+        "q-error": 2.915739188526836
+    },
+    "31.sql": {
+        "actual": 7153,
+        "estimated": 393,
+        "estimation diff": "-6760",
+        "q-error": 18.201017811704833
+    },
+    "32.sql": {
+        "actual": 14102,
+        "estimated": 677,
+        "estimation diff": "-13425",
+        "q-error": 20.830132939438702
+    },
+    "33.sql": {
+        "actual": 31339132,
+        "estimated": 21549013,
+        "estimation diff": "-9790119",
+        "q-error": 1.4543186734352984
+    },
+    "34.sql": {
+        "actual": 75440,
+        "estimated": 8476,
+        "estimation diff": "-66964",
+        "q-error": 8.900424728645588
+    },
+    "35.sql": {
+        "actual": 72,
+        "estimated": 323,
+        "estimation diff": "+251",
+        "q-error": 4.486111111111111
+    },
+    "36.sql": {
+        "actual": 305691,
+        "estimated": 40727,
+        "estimation diff": "-264964",
+        "q-error": 7.505856066000442
+    },
+    "37.sql": {
+        "actual": 1919495,
+        "estimated": 917108,
+        "estimation diff": "-1002387",
+        "q-error": 2.0929868674136527
+    },
+    "38.sql": {
+        "actual": 150780,
+        "estimated": 95019,
+        "estimation diff": "-55761",
+        "q-error": 1.5868405266315158
+    },
+    "39.sql": {
+        "actual": 3243247,
+        "estimated": 1625634,
+        "estimation diff": "-1617613",
+        "q-error": 1.9950659250483196
+    },
+    "40.sql": {
+        "actual": 1043763,
+        "estimated": 401983,
+        "estimation diff": "-641780",
+        "q-error": 2.596535176860713
+    },
+    "41.sql": {
+        "actual": 512575801,
+        "estimated": 341253254,
+        "estimation diff": "-171322547",
+        "q-error": 1.5020393065614548
+    },
+    "42.sql": {
+        "actual": 206778521,
+        "estimated": 126205184,
+        "estimation diff": "-80573337",
+        "q-error": 1.638431278702466
+    },
+    "43.sql": {
+        "actual": 625302823,
+        "estimated": 492087368,
+        "estimation diff": "-133215455",
+        "q-error": 1.2707150470889552
+    },
+    "44.sql": {
+        "actual": 7796926,
+        "estimated": 783650,
+        "estimation diff": "-7013276",
+        "q-error": 9.949500414725962
+    },
+    "45.sql": {
+        "actual": 1831108,
+        "estimated": 1356064,
+        "estimation diff": "-475044",
+        "q-error": 1.3503108997805413
+    },
+    "46.sql": {
+        "actual": 2936093,
+        "estimated": 563747,
+        "estimation diff": "-2372346",
+        "q-error": 5.208174943724756
+    },
+    "47.sql": {
+        "actual": 16461908,
+        "estimated": 3350135,
+        "estimation diff": "-13111773",
+        "q-error": 4.913804369077664
+    },
+    "48.sql": {
+        "actual": 24675801,
+        "estimated": 14124126,
+        "estimation diff": "-10551675",
+        "q-error": 1.7470674645638251
+    },
+    "49.sql": {
+        "actual": 132317651,
+        "estimated": 96077322,
+        "estimation diff": "-36240329",
+        "q-error": 1.3771996163673255
+    },
+    "50.sql": {
+        "actual": 90649862,
+        "estimated": 55711464,
+        "estimation diff": "-34938398",
+        "q-error": 1.6271312130659499
+    },
+    "51.sql": {
+        "actual": 151179813,
+        "estimated": 116893126,
+        "estimation diff": "-34286687",
+        "q-error": 1.2933165377064173
+    },
+    "52.sql": {
+        "actual": 84217062,
+        "estimated": 53667136,
+        "estimation diff": "-30549926",
+        "q-error": 1.5692483012322476
+    },
+    "53.sql": {
+        "actual": 333474,
+        "estimated": 68289,
+        "estimation diff": "-265185",
+        "q-error": 4.883275490928261
+    },
+    "54.sql": {
+        "actual": 307213,
+        "estimated": 66330,
+        "estimation diff": "-240883",
+        "q-error": 4.631584501733755
+    },
+    "55.sql": {
+        "actual": 658557,
+        "estimated": 138853,
+        "estimation diff": "-519704",
+        "q-error": 4.742835948809172
+    },
+    "56.sql": {
+        "actual": 8275169,
+        "estimated": 6169177,
+        "estimation diff": "-2105992",
+        "q-error": 1.3413732496247068
+    },
+    "57.sql": {
+        "actual": 5060606,
+        "estimated": 4302094,
+        "estimation diff": "-758512",
+        "q-error": 1.176312279555026
+    },
+    "58.sql": {
+        "actual": 1352809555,
+        "estimated": 1016550397,
+        "estimation diff": "-336259158",
+        "q-error": 1.330784542500159
+    },
+    "59.sql": {
+        "actual": 191935,
+        "estimated": 4236,
+        "estimation diff": "-187699",
+        "q-error": 45.3104343720491
+    },
+    "60.sql": {
+        "actual": 9537310863,
+        "estimated": 7194541104,
+        "estimation diff": "-2342769759",
+        "q-error": 1.3256315760983663
+    },
+    "61.sql": {
+        "actual": 492943940,
+        "estimated": 365452720,
+        "estimation diff": "-127491220",
+        "q-error": 1.3488583146952635
+    },
+    "62.sql": {
+        "actual": 32355583,
+        "estimated": 26112720,
+        "estimation diff": "-6242863",
+        "q-error": 1.2390736392072523
+    },
+    "63.sql": {
+        "actual": 81495003,
+        "estimated": 55364807,
+        "estimation diff": "-26130196",
+        "q-error": 1.4719640041371407
+    },
+    "64.sql": {
+        "actual": 51282842,
+        "estimated": 32859321,
+        "estimation diff": "-18423521",
+        "q-error": 1.560678688400165
+    },
+    "65.sql": {
+        "actual": 19006,
+        "estimated": 4278,
+        "estimation diff": "-14728",
+        "q-error": 4.442730247779336
+    },
+    "66.sql": {
+        "actual": 26718423,
+        "estimated": 19000452,
+        "estimation diff": "-7717971",
+        "q-error": 1.4061993367315684
+    },
+    "67.sql": {
+        "actual": 15813608,
+        "estimated": 11018088,
+        "estimation diff": "-4795520",
+        "q-error": 1.4352406697060325
+    },
+    "68.sql": {
+        "actual": 1067496,
+        "estimated": 216516,
+        "estimation diff": "-850980",
+        "q-error": 4.9303330931663245
+    },
+    "69.sql": {
+        "actual": 268172,
+        "estimated": 79777,
+        "estimation diff": "-188395",
+        "q-error": 3.361520237662484
+    },
+    "70.sql": {
+        "actual": 258385218,
+        "estimated": 190850898,
+        "estimation diff": "-67534320",
+        "q-error": 1.3538590633196812
+    }
+}

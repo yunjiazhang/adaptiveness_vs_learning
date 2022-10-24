@@ -1,0 +1,92 @@
+{
+    "1.sql": {
+        "actual": 42209,
+        "estimated": 35274,
+        "estimation diff": "-6935",
+        "q-error": 1.196603730793219
+    },
+    "2.sql": {
+        "actual": 1193001,
+        "estimated": 993200,
+        "estimation diff": "-199801",
+        "q-error": 1.2011689488521948
+    },
+    "3.sql": {
+        "actual": 42209,
+        "estimated": 35274,
+        "estimation diff": "-6935",
+        "q-error": 1.196603730793219
+    },
+    "4.sql": {
+        "actual": 9488,
+        "estimated": 7952,
+        "estimation diff": "-1536",
+        "q-error": 1.193158953722334
+    },
+    "5.sql": {
+        "actual": 9488,
+        "estimated": 7952,
+        "estimation diff": "-1536",
+        "q-error": 1.193158953722334
+    },
+    "6.sql": {
+        "actual": 490740,
+        "estimated": 409051,
+        "estimation diff": "-81689",
+        "q-error": 1.1997037044280543
+    },
+    "7.sql": {
+        "actual": 94856,
+        "estimated": 80084,
+        "estimation diff": "-14772",
+        "q-error": 1.1844563208630938
+    },
+    "8.sql": {
+        "actual": 11847,
+        "estimated": 9780,
+        "estimation diff": "-2067",
+        "q-error": 1.2113496932515337
+    },
+    "9.sql": {
+        "actual": 2199936,
+        "estimated": 1836820,
+        "estimation diff": "-363116",
+        "q-error": 1.1976873074117225
+    },
+    "10.sql": {
+        "actual": 87646,
+        "estimated": 73284,
+        "estimation diff": "-14362",
+        "q-error": 1.1959772938158397
+    },
+    "11.sql": {
+        "actual": 3347,
+        "estimated": 2706,
+        "estimation diff": "-641",
+        "q-error": 1.236881005173688
+    },
+    "12.sql": {
+        "actual": 53,
+        "estimated": 38,
+        "estimation diff": "-15",
+        "q-error": 1.394736842105263
+    },
+    "13.sql": {
+        "actual": 976694,
+        "estimated": 817383,
+        "estimation diff": "-159311",
+        "q-error": 1.1949037354581635
+    },
+    "14.sql": {
+        "actual": 235447,
+        "estimated": 197091,
+        "estimation diff": "-38356",
+        "q-error": 1.194610611341969
+    },
+    "15.sql": {
+        "actual": 4637,
+        "estimated": 3870,
+        "estimation diff": "-767",
+        "q-error": 1.1981912144702842
+    }
+}
