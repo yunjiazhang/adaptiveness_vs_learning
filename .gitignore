@@ -1,5 +1,5 @@
 # queries/job
-queries/job_lip_rand_plan
+# queries/job_lip_rand_plan
 queries/job_pg_lip_adaptive_join
 queries/job_pg_lip_balsa
 queries/job_rand_plan
