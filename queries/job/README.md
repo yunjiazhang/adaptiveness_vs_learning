@@ -1,0 +1,1 @@
+This folder contains the original JOB queries (```./original/```) and the LIP+AJA re-written queries (```./LIP+AJA/```). To execute the queries, you need to first load the IDMB data set into your PostgreSQL, and then install the pg_lip_bloom extension (listed in ```pg_lip_bloom/```). 

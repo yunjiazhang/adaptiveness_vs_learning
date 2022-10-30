@@ -6,3 +6,4 @@
 - ./job_rand_plan/ contains the plans picked by Balsa when cross validated using queries with different joins
 - ./tpch/ contains the TPCH queries, with and without LIP
 
+Before query execution, run ```LIP_extension_init.sql``` to refresh the pg_lip_bloom extension to make sure you are not using a stale build. 

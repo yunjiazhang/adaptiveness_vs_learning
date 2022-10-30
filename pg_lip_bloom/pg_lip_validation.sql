@@ -1,12 +1,9 @@
-DROP EXTENSION pg_lip_bloom; 
+DROP EXTENSION IF EXISTS pg_lip_bloom; 
 CREATE EXTENSION pg_lip_bloom;
 
 SELECT pg_lip_bloom_init(2);
-
 SELECT sum(pg_lip_bloom_add(0, part.p_partkey)) FROM part WHERE p_category = 'MFGR#12';
 SELECT sum(pg_lip_bloom_add(1, supplier.s_suppkey)) FROM supplier WHERE s_region = 'AMERICA';
-SELECT pg_lip_bloom_info();
-SELECT pg_lip_bloom_make_shared();
 
 EXPLAIN ANALYZE 
 SELECT count(*)
@@ -68,9 +65,6 @@ WHERE lo_orderdate = d_datekey
   AND pg_lip_bloom_probe(1, lo_suppkey);
 -- GROUP BY d_year, p_brand1
 -- ORDER BY d_year, p_brand1
-
-
--- SELECT pg_lip_bloom_free();
 
 EXPLAIN ANALYZE SELECT count(*)
 FROM lineorder,
