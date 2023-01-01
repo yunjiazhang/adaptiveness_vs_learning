@@ -1,4 +1,6 @@
-# Adatpiveness is all you need.
+# Simple Adaptive Query Processing can be Competitive to Learned Query Optimization 
+
+This is the code repo for the submitted paper.
 
 ./pg_lip_bloom/ contains the PostgreSQL extesnion of LIP. Run compile.sh to compile and install the extension. 
 
