@@ -57,10 +57,15 @@ To use ```pg_lip```, we need to first rewrite the query with the extension funct
 For simple JOB queries, we provide a auto query rewriting tool ```./pg_lip_bloom/lip_query_rewriter/rewriter.py```. The main function rewrites all the queries in ```all_files``` and output the rewriten queries to the subdir ```./pg_lip_bloom/lip_auto_rewrite/```. Note that this rewriter only rewrite for LIP extension. It needs PostgreSQL to be running and accept connection at port 5432.
 
 ## Query Plans ## 
-We provide JOB rewritten queries in ```./queries/job/LIP+AJA/```. The plans include 
+We provide JOB rewritten queries in ```./queries/job/LIP+AJA/```. The plans include both LIP and AJA, and also applied the optimization rules of LIP manually (see our paper in detail). 
 
 ## Evaluating Runtimes ## 
-
+We provide a toolkit to evaluate the query workload runtime with and without LIP+AJA in ```./runtime_eval/```. To run the evaluation tool, first install the required python packages 
+```bash
+cd ./runtime_eval/
+pip install -r requirements.txt
+```
+Then, you may refer to the notebook ```./runtime_eval/runtime_quality.ipynb``` for usage examples.
 
 ## Baseline RL-based Query Optimizers ## 
 We used the original repo provided by the authors of [Bao](https://github.com/learnedsystems/BaoForPostgreSQL) and [Balsa](https://github.com/balsa-project/balsa) to conduct our comparative study. We are thankful to the authors of Balsa and Bao for transparency in their work and releasing their code. Our research would have been far more difficult and the results harder to understand without this gracious contribution by the Balsa and Bao team.
