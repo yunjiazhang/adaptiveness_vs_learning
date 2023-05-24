@@ -201,16 +201,14 @@ static int bloom_check_add(struct bloom * bloom,
 }
 
 void * parallel_probe_func(void *i){
-
-  register int tid = *((int *) i);
-  int idx = tid * parallel_global_step;
-  elog(NOTICE, "Parallel checker: %d (from %d to %d) ", tid, idx, parallel_global_end_points[tid]);
-  elog(NOTICE, "Parallel checker %d: %p ", tid, parallel_global_bloom);
-  elog(NOTICE, "Parallel checker %d: %p ", tid, parallel_global_buffer);
-  elog(NOTICE, "Parallel checker %d: %d ", tid, parallel_global_len);
+  // register int tid = *((int *) i);
+  // int idx = tid * parallel_global_step;
+  // elog(NOTICE, "Parallel checker: %d (from %d to %d) ", tid, idx, parallel_global_end_points[tid]);
+  // elog(NOTICE, "Parallel checker %d: %p ", tid, parallel_global_bloom);
+  // elog(NOTICE, "Parallel checker %d: %p ", tid, parallel_global_buffer);
+  // elog(NOTICE, "Parallel checker %d: %d ", tid, parallel_global_len);
   // exit(1);
-
-
+  
   // register unsigned int a = murmurhash2(parallel_global_buffer, 
   //                                       parallel_global_len, 
   //                                       0x9747b28c);
@@ -282,6 +280,7 @@ int bloom_init(struct bloom * bloom, int entries, double error, key_t key)
   bloom->key = key;
   bloom->probe_cnt = 0;
   bloom->prune_cnt = 0;
+  bloom->total_probe_cnt = 0;
 
   if (entries < 1000 || error == 0) {
     return 1;

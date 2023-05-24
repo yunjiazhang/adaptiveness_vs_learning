@@ -1,4 +1,4 @@
-# Simple Adaptive Query Processing vs. Learned Query Optimizers: Observations and Analysis #
+# Adaptiveness vs Learning  #
 
 This is the code repository for the submitted VLDB 2023 paper: *Simple Adaptive Query Processing vs. Learned Query Optimizers: Observations and Analysis*. In this repository, we include the postgres extension we used and provide links to the baseline methods.
 
@@ -9,14 +9,41 @@ This is the code repository for the submitted VLDB 2023 paper: *Simple Adaptive 
 
 ## Preperation ## 
 
+### Installing Postgres
 
-## Installing Postgres Extension ##
+* Download Postgres source code: 
+```bash
+wget https://ftp.postgresql.org/pub/source/v12.5/postgresql-12.5.tar.gz
+tar xzvf postgresql-12.5.tar.gz
+```
+
+* Compile and install Postgres
+```bash
+cd postgresql-12.5
+./configure --prefix=/mnt/postgresql-12.5 --without-readline
+sudo make -j
+sudo make install
+echo 'export PATH=/mnt/postgresql-12.5/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+```
+Other config details such as loading IMDB data to Postgres can refer to the [Balsa repo](https://github.com/balsa-project/balsa)
+
+## Installing LIP Extension for Postgres ##
+First, clone this repository by running ```git clone https://github.com/yunjiazhang/adaptiveness_vs_learning.git```
 
 ### Requirements ###
+The following is the system enviornment example that verified this extension works correctly. Other versions may also work correctly but not verified.
 
+* Hardware config: Intel(R) Xeon(R) Gold 5115 CPU with 256G RAM
+* System: Ubuntu 20.04.6 LTS
+* Software:
+    - GNU Make 4.2.1
+    - gcc g++ 9.4.0
+
+Python 3.9.12 is used for runtime evaluation only, see ```./runtime_eval/README.md``` for more details on .
 
 ### Compiling the extension ###
-We use Makefile to make the installation procedure fluent. The default PostgreSQL installation directory ```/data/postgresql-12.5```. If you use other directories, change the ```PG_DIR``` in ```Makefile```. To compile, simply run ```make```.
+We use Makefile to make the installation procedure fluent. The default PostgreSQL installation directory ```/mnt/postgresql-12.5```. If you use other directories, change the ```PG_DIR``` in ```Makefile```. To compile, simply run ```make```.
 
 ### Installing the extension ###
 Simply run ```make install``` to copy the compiled files to PostgreSQL directory. Run ```make clean``` to clean the compiled files if needed.
@@ -26,7 +53,12 @@ To use ```pg_lip```, we need to first rewrite the query with the extension funct
 
 ![Alt text](docs/query_example.jpg?raw=true "Query rewriting example")
 
+### Auto query rewriting
+For simple SPJ queries, we provide a auto query rewriting tool ```./lip_query_rewriter/rewriter.py```. The main function rewrites all the queries in ```all_files``` and output the rewriten queries to the subdir ```lip_auto_rewrite/```. Note that this rewriter needs to interact with PostgreSQL and only works on JOB queries. 
+
 ## Evaluating Runtimes ## 
+
+
 
 ## Baseline RL-based Query Optimizers ## 
 We used the original repo provided by the authors of [Bao](https://github.com/learnedsystems/BaoForPostgreSQL) and [Balsa](https://github.com/balsa-project/balsa) to conduct our comparative study. We are thankful to the authors of Balsa and Bao for transparency in their work and releasing their code. Our research would have been far more difficult and the results harder to understand without this gracious contribution by the Balsa and Bao team.

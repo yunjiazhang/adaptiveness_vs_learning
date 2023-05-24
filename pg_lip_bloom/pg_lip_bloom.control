@@ -1,5 +1,5 @@
-# lip_bloom extension
+# pg_lip_bloom extension
 comment = 'bloom access method - signature file based index'
 default_version = '1.0'
-module_pathname = '/mnt/ml4qo/lip_db/pg_lip_bloom/pg_lip_bloom'
+module_pathname = 'pg_lip_bloom'
 relocatable = true

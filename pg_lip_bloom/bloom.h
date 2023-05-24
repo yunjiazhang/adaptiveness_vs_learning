@@ -46,6 +46,8 @@ struct bloom
   float probe_cnt;
   float prune_cnt;
   float stale_timer;
+  int32 total_probe_cnt;
+  // int * probed_keys;
 };
 
 
