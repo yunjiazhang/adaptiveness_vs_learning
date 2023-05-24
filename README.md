@@ -1,6 +1,8 @@
-# Simple Adaptive Query Processing can be Competitive to Learned Query Optimization 
+# Simple Adaptive Query Processing vs. Learned Query Optimizers: Observations and Analysis
 
-This is the code repo for the submitted paper.
+This is the code repository for the VLDB paper: Simple Adaptive Query Processing vs. Learned Query Optimizers: Observations and Analysis.
+
+## Loading data ## 
 
 ./pg_lip_bloom/ contains the PostgreSQL extesnion of LIP. Run compile.sh to compile and install the extension. 
 
