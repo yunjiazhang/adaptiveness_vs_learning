@@ -9,6 +9,7 @@ This is the code repository for the submitted VLDB 2023 paper: *Simple Adaptive 
 
 ## Preperation ## 
 
+
 ## Installing Postgres Extension ##
 
 ### Requirements ###
