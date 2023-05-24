@@ -26,7 +26,7 @@ sudo make install
 echo 'export PATH=/mnt/postgresql-12.5/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 ```
-Other config details such as loading IMDB data to Postgres can refer to the [Balsa repo](https://github.com/balsa-project/balsa)
+For other config details such as loading IMDB data to Postgres and setting up ```pg_hint_plan```,  you may refer to the [Balsa repo](https://github.com/balsa-project/balsa)
 
 ## Installing LIP Extension for Postgres ##
 First, clone this repository by running ```git clone https://github.com/yunjiazhang/adaptiveness_vs_learning.git```
@@ -54,10 +54,12 @@ To use ```pg_lip```, we need to first rewrite the query with the extension funct
 ![Alt text](docs/query_example.jpg?raw=true "Query rewriting example")
 
 ### Auto query rewriting
-For simple SPJ queries, we provide a auto query rewriting tool ```./lip_query_rewriter/rewriter.py```. The main function rewrites all the queries in ```all_files``` and output the rewriten queries to the subdir ```lip_auto_rewrite/```. Note that this rewriter needs to interact with PostgreSQL and only works on JOB queries. 
+For simple JOB queries, we provide a auto query rewriting tool ```./pg_lip_bloom/lip_query_rewriter/rewriter.py```. The main function rewrites all the queries in ```all_files``` and output the rewriten queries to the subdir ```./pg_lip_bloom/lip_auto_rewrite/```. Note that this rewriter only rewrite for LIP extension. It needs PostgreSQL to be running and accept connection at port 5432.
+
+## Query Plans ## 
+We provide JOB rewritten queries in ```./queries/job/LIP+AJA/```. The plans include 
 
 ## Evaluating Runtimes ## 
-
 
 
 ## Baseline RL-based Query Optimizers ## 
