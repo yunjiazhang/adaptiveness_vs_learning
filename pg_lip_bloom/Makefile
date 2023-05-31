@@ -1,5 +1,5 @@
 CC=gcc
-PG_DIR=/data/postgresql-12.5
+PG_DIR=/mnt/postgresql-12.5
 
 pg_lip_bloom: 
 	$(CC) -pthread -fPIC -I $(PG_DIR)/include/server/ -c pg_lip_bloom.c
