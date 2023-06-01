@@ -133,21 +133,36 @@ class Postgres_Connector:
                     query = query.replace('*/', '*/ EXPLAIN ANALYZE VERBOSE ')
                 else:
                     query = 'EXPLAIN ANALYZE VERBOSE ' + query
-        
-        start_time = time.time()
-        q, res = None, None
-        # if not set_env :
-        #     q = QueryResult(None)
-        #     q.query = query
-        #     # try:
-        #     q.explain(self.db, execute=True, timeout=0 if timeout is None else timeout*1000)
-        #     # except Exception as e:
-        #     #     q.execution_cost = -timeout
-        #     #     q.cardinalities = {'actual': -1}
-        # else:
-        if True:
+
+        try:
+            if timeout is not None:
+                self.db.execute(f"set statement_timeout to {int(timeout * 1000)};", set_env=True)
+            
+            start_time = time.time()
+            q, res = None, None
+            # if not set_env :
+            #     q = QueryResult(None)
+            #     q.query = query
+            #     # try:
+            #     q.explain(self.db, execute=True, timeout=0 if timeout is None else timeout*1000)
+            #     # except Exception as e:
+            #     #     q.execution_cost = -timeout
+            #     #     q.cardinalities = {'actual': -1}
+            # else:
+            
             res = self.db.execute(query, set_env=True)
-        end_time = time.time()
+            end_time = time.time()
+    
+            if timeout is not None:
+                self.db.execute(f"set statement_timeout to 0;", set_env=True)
+        except Exception as e:
+            print(str(e))
+            return {
+                'execution_cost': timeout, # end_time - start_time,
+                'result_size': -1,
+                'result_rows': -1,
+                'end_to_end_executing_cost': timeout
+            }
         
         if q is not None:
             ret = {
