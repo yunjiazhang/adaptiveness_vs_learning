@@ -42,8 +42,8 @@ class Postgres_Connector:
     
     def _reset_connection(self,):
         if self.db_name:
-            self.db_url = f"host={server} port=5432 user={username} dbname={db_name} password={password} options='-c statement_timeout={600000}' "
-            self.init_db(db_name)
+            self.db_url = f"host={self.server} port=5432 user={self.username} dbname={self.db_name} password={self.password} options='-c statement_timeout={600000}' "
+            self.init_db(self.db_name)
         else:
             logging.info("Database name not defnied.")
 
