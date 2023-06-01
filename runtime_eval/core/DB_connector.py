@@ -157,6 +157,7 @@ class Postgres_Connector:
                 self.db.execute(f"set statement_timeout to 0;", set_env=True)
         except Exception as e:
             print(str(e))
+            self._reset_connection()
             return {
                 'execution_cost': timeout, # end_time - start_time,
                 'result_size': -1,
