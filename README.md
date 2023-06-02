@@ -57,10 +57,15 @@ cd adaptiveness_vs_learning/load_data/imdb/
 wget -c http://homepages.cwi.nl/~boncz/job/imdb.tgz && tar -xvzf imdb.tgz
 # Add header
 python3 add_headers.py
-# Create database
-pg_ctl -D /mnt/postgres_data/ initdb
+# Create database at /mnt/postgres_data/, can be changed to any directory
+cd /mnt/adaptiveness_vs_learning/
+pg_ctl -D /mnt/postgres_data/imdb/ initdb
 # Copy the config file
+cp load_data/imdb/postgresql.conf /mnt/postgres_data/imdb/
 
+# Start the server
+pg_ctl -D /mnt/postgres_data/imdb/ start
+bash load_data/imdb/load_job.sh load_data/imdb/
 ```
 
 <!-- For other config details such as loading IMDB data to Postgres and setting up ```pg_hint_plan```,  you may refer to the [Balsa repo](https://github.com/balsa-project/balsa) -->
