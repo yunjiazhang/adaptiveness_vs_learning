@@ -47,7 +47,7 @@ sudo make install
 ```
 
 ### Loading IMDB data to Postgres
-
+To run the following commands, make sure to run as users other than root.
 ```bash
 # Clone this repo
 cd /mnt/
@@ -57,32 +57,38 @@ cd adaptiveness_vs_learning/load_data/imdb/
 wget -c http://homepages.cwi.nl/~boncz/job/imdb.tgz && tar -xvzf imdb.tgz
 # Add header
 python3 add_headers.py
+
 # Create database at /mnt/postgres_data/, can be changed to any directory
 cd /mnt/adaptiveness_vs_learning/
 pg_ctl -D /mnt/postgres_data/imdb/ initdb
+
 # Copy the config file
 cp load_data/imdb/postgresql.conf /mnt/postgres_data/imdb/
 
 # Start the server
 pg_ctl -D /mnt/postgres_data/imdb/ start
-bash load_data/imdb/load_job.sh load_data/imdb/
+bash load_data/imdb/load_job.sh /mnt/adaptiveness_vs_learning/load_data/imdb/
 ```
 
 <!-- For other config details such as loading IMDB data to Postgres and setting up ```pg_hint_plan```,  you may refer to the [Balsa repo](https://github.com/balsa-project/balsa) -->
 
 ## Installing LIP Extension for Postgres ##
-First, clone this repository by running ```git clone https://github.com/yunjiazhang/adaptiveness_vs_learning.git```
+<!-- First, clone this repository by running ```git clone https://github.com/yunjiazhang/adaptiveness_vs_learning.git```
 
-### Requirements ###
+```bash
+
+``` -->
+
+<!-- ### Requirements ###
 The following is the system enviornment example that verified this extension works correctly. Other versions may also work correctly but not verified.
 
 * Hardware config: Intel(R) Xeon(R) Gold 5115 CPU with 256G RAM
 * System: Ubuntu 20.04.6 LTS
 * Software:
     - GNU Make 4.2.1
-    - gcc g++ 9.4.0
+    - gcc g++ 9.4.0 -->
 
-Python 3.9.12 is used for runtime evaluation only, see ```./runtime_eval/README.md``` for more details.
+<!-- Python 3.9.12 is used for runtime evaluation only, see ```./runtime_eval/README.md``` for more details. -->
 
 ### Compiling the extension ###
 We use Makefile to make the installation procedure fluent. The default PostgreSQL installation directory ```/mnt/postgresql-12.5```. If you use other directories, change the ```PG_DIR``` in ```Makefile```. To compile, simply run ```make```.
@@ -95,16 +101,17 @@ To use ```pg_lip```, we need to first rewrite the query with the extension funct
 
 ![Alt text](docs/query_example.jpg?raw=true "Query rewriting example")
 
-### Auto query rewriting
+### LIP query rewriting
 For simple JOB queries, we provide a auto query rewriting tool ```./pg_lip_bloom/lip_query_rewriter/rewriter.py```. The main function rewrites all the queries in ```all_files``` and output the rewriten queries to the subdir ```./pg_lip_bloom/lip_auto_rewrite/```. Note that this rewriter only rewrite for LIP extension. It needs PostgreSQL to be running and accept connection at port 5432.
 
 ## Query Plans ## 
-We provide JOB rewritten queries in ```./queries/job/LIP+AJA/```. The plans include both LIP and AJA, and also applied the optimization rules of LIP manually (see our paper in detail). 
+We provide JOB rewritten queries in ```./queries/job/LIP+AJA/```. The plans include both LIP and AJA, and also applied the optimization rules of LIP manually (see our paper in detail). For other queries, you may consider using the auto-rewriter first and then apply the optimization rules and AJA by hand.
 
 ## Evaluating Runtimes ## 
 We provide a toolkit to evaluate the query workload runtime with and without LIP+AJA in ```./runtime_eval/```. To run the evaluation tool, first install the required python packages 
 ```bash
-cd ./runtime_eval/
+sudo apt install python3 python3-pip unixodbc-dev libpq-dev
+cd runtime_eval/
 pip install -r requirements.txt
 ```
 Then, you may refer to the notebook ```./runtime_eval/runtime_quality.ipynb``` for usage examples.
