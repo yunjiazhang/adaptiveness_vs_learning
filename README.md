@@ -8,17 +8,23 @@ This is the code repository for the submitted VLDB 2023 paper: *Simple Adaptive 
 * ```./runtime_eval/``` contains the external python code to obtain the workload run times. 
 
 ## Preperation ## 
+For preperation details of Postgres,  you may refer to the [Balsa repo](https://github.com/balsa-project/balsa). The following instructions are adapted from [Balsa repo](https://github.com/balsa-project/balsa).  
 
 ### Installing Postgres
 
 * Download Postgres source code: 
 ```bash
+cd /tmp/ # change to any directory to compile and download pg
 wget https://ftp.postgresql.org/pub/source/v12.5/postgresql-12.5.tar.gz
 tar xzvf postgresql-12.5.tar.gz
 ```
 
 * Compile and install Postgres
+
+The default installation location is ```/mnt/postgresql-12.5```. Change it to any other locations if needed. 
 ```bash
+sudo apt update
+sudo apt install build-essential zlib1g-dev
 cd postgresql-12.5
 ./configure --prefix=/mnt/postgresql-12.5 --without-readline
 sudo make -j
@@ -26,7 +32,23 @@ sudo make install
 echo 'export PATH=/mnt/postgresql-12.5/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 ```
-For other config details such as loading IMDB data to Postgres and setting up ```pg_hint_plan```,  you may refer to the [Balsa repo](https://github.com/balsa-project/balsa)
+
+### Installing pg_hint_plan 
+```bash
+sudo apt install git
+cd /tmp/
+git clone https://github.com/ossc-db/pg_hint_plan.git -b REL12_1_3_7
+# Modify Makefile: change line
+#   PG_CONFIG = pg_config
+# to
+#   PG_CONFIG = /mnt/postgresql-12.5/bin/pg_config
+sudo make
+sudo make install
+```
+
+### Loading IMDB data to Postgres
+
+<!-- For other config details such as loading IMDB data to Postgres and setting up ```pg_hint_plan```,  you may refer to the [Balsa repo](https://github.com/balsa-project/balsa) -->
 
 ## Installing LIP Extension for Postgres ##
 First, clone this repository by running ```git clone https://github.com/yunjiazhang/adaptiveness_vs_learning.git```
@@ -40,7 +62,7 @@ The following is the system enviornment example that verified this extension wor
     - GNU Make 4.2.1
     - gcc g++ 9.4.0
 
-Python 3.9.12 is used for runtime evaluation only, see ```./runtime_eval/README.md``` for more details on .
+Python 3.9.12 is used for runtime evaluation only, see ```./runtime_eval/README.md``` for more details.
 
 ### Compiling the extension ###
 We use Makefile to make the installation procedure fluent. The default PostgreSQL installation directory ```/mnt/postgresql-12.5```. If you use other directories, change the ```PG_DIR``` in ```Makefile```. To compile, simply run ```make```.
