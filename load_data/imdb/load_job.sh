@@ -18,6 +18,7 @@ set -ex
 DATA_DIR=$1
 DBNAME=${2:-imdbload}
 
+dropdb $DBNAME
 createdb $DBNAME
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
