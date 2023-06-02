@@ -2,10 +2,10 @@
 
 This is the code repository for the submitted VLDB 2023 paper: *Simple Adaptive Query Processing vs. Learned Query Optimizers: Observations and Analysis*. In this repository, we include the postgres extension we used and provide links to the baseline methods.
 
-## Overview ##
+<!-- ## Overview ##
 * ```./pg_lip_bloom/``` contains the PostgreSQL extesnion of LIP.
 * ```./queries/``` contains the queries for eavluation. 
-* ```./runtime_eval/``` contains the external python code to obtain the workload run times. 
+* ```./runtime_eval/``` contains the external python code to obtain the workload run times.  -->
 
 ## Preperation ## 
 For preperation details of Postgres,  you may refer to the [Balsa repo](https://github.com/balsa-project/balsa). The following instructions are adapted from [Balsa repo](https://github.com/balsa-project/balsa).  
@@ -47,6 +47,11 @@ sudo make install
 ```
 
 ### Loading IMDB data to Postgres
+
+```bash
+cd /tmp/
+wget -c http://homepages.cwi.nl/~boncz/job/imdb.tgz && tar -xvzf imdb.tgz
+```
 
 <!-- For other config details such as loading IMDB data to Postgres and setting up ```pg_hint_plan```,  you may refer to the [Balsa repo](https://github.com/balsa-project/balsa) -->
 
