@@ -90,11 +90,13 @@ The following is the system enviornment example that verified this extension wor
 
 <!-- Python 3.9.12 is used for runtime evaluation only, see ```./runtime_eval/README.md``` for more details. -->
 
-### Compiling the extension ###
 We use Makefile to make the installation procedure fluent. The default PostgreSQL installation directory ```/mnt/postgresql-12.5```. If you use other directories, change the ```PG_DIR``` in ```Makefile```. To compile, simply run ```make```.
 
-### Installing the extension ###
-Simply run ```make install``` to copy the compiled files to PostgreSQL directory. Run ```make clean``` to clean the compiled files if needed.
+```bash
+cd pg_lip_bloom/
+make
+make install 
+```
 
 ## Usage Example ##
 To use ```pg_lip```, we need to first rewrite the query with the extension functions provided, then the query can be directly run with the PostgreSQL. For a new PostgreSQL session, run ```CREATE EXTENSION pg_lip_bloom;``` to create the extension.
