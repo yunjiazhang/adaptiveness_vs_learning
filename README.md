@@ -99,6 +99,7 @@ Simply run ```make install``` to copy the compiled files to PostgreSQL directory
 ## Usage Example ##
 To use ```pg_lip```, we need to first rewrite the query with the extension functions provided, then the query can be directly run with the PostgreSQL. For a new PostgreSQL session, run ```CREATE EXTENSION pg_lip_bloom;``` to create the extension.
 
+Then the query should be rewritten as the following example:
 ![Alt text](docs/query_example.jpg?raw=true "Query rewriting example")
 
 ### LIP query rewriting
