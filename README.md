@@ -1,6 +1,6 @@
 # Adaptiveness vs Learning  #
 
-This is the code repository for the submitted VLDB 2023 paper: *Simple Adaptive Query Processing vs. Learned Query Optimizers: Observations and Analysis*. In this repository, we include the postgres extension we used, LIP+AJA rewritten queries, and evaluation tools for the queries.
+This is the code repository for the VLDB 2023 paper: *Simple Adaptive Query Processing vs. Learned Query Optimizers: Observations and Analysis*. In this repository, we include the postgres extension we used, LIP+AJA rewritten queries, and evaluation tools for the queries.
 
 <!-- ## Overview ##
 * ```./pg_lip_bloom/``` contains the PostgreSQL extesnion of LIP.
