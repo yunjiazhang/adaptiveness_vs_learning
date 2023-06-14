@@ -14,15 +14,6 @@ import subprocess, threading
 import logging as logging
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 
-## import couchbase stuffs
-# import couchbase.search as FT
-# import couchbase.subdocument as SD
-# # import jwt  # from PyJWT
-# from couchbase.cluster import Cluster, ClusterOptions, PasswordAuthenticator, ClusterTimeoutOptions
-# from couchbase.exceptions import *
-# from couchbase.search import SearchOptions
-# from couchbase.exceptions import TimeoutException
-
 import time
 import json
 from datetime import timedelta
