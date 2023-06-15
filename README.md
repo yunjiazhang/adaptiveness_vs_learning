@@ -56,6 +56,7 @@ git clone https://github.com/yunjiazhang/adaptiveness_vs_learning.git
 cd adaptiveness_vs_learning/load_data/imdb/
 wget -c http://homepages.cwi.nl/~boncz/job/imdb.tgz && tar -xvzf imdb.tgz
 # Add header
+pip install absl-py
 python3 add_headers.py
 
 # Create database at /mnt/postgres_data/, can be changed to any directory
