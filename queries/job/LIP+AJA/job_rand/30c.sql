@@ -6,18 +6,30 @@ SELECT sum(pg_lip_bloom_add(3, id)) FROM info_type AS it1 WHERE it1.info = 'genr
 SELECT sum(pg_lip_bloom_add(4, id)) FROM info_type AS it2 WHERE it2.info = 'votes';
 
 /*+
-NestLoop(cct1 cc cct2 mi_idx it2 mi it1 t ci n mk k)
-NestLoop(cct1 cc cct2 mi_idx it2 mi it1 t ci n mk)
-NestLoop(cct1 cc cct2 mi_idx it2 mi it1 t ci n)
-NestLoop(cct1 cc cct2 mi_idx it2 mi it1 t ci)
-NestLoop(cct1 cc cct2 mi_idx it2 mi it1 t)
-NestLoop(cct1 cc cct2 mi_idx it2 mi it1)
-NestLoop(cct1 cc cct2 mi_idx it2 mi)
-NestLoop(cct1 cc cct2 mi_idx it2)
-NestLoop(cct1 cc cct2 mi_idx)
-NestLoop(cct1 cc cct2)
-NestLoop(cct1 cc)
-Leading(((((((it1 (((((cct1 cc) cct2) mi_idx) it2) mi)) t) ci) n) mk) k))
+NestLoop(k mk mi_idx it2 cc cct1 cct2 ci mi it1 n t)
+NestLoop(k mk mi_idx it2 cc cct1 cct2 ci mi it1 n)
+NestLoop(k mk mi_idx it2 cc cct1 cct2 ci mi it1)
+NestLoop(k mk mi_idx it2 cc cct1 cct2 ci mi)
+NestLoop(k mk mi_idx it2 cc cct1 cct2 ci)
+NestLoop(k mk mi_idx it2 cc cct1 cct2)
+NestLoop(k mk mi_idx it2 cc cct1)
+NestLoop(k mk mi_idx it2 cc)
+NestLoop(k mk mi_idx it2)
+NestLoop(k mk mi_idx)
+NestLoop(k mk)
+IndexScan(t)
+IndexScan(n)
+IndexScan(it1)
+IndexScan(mi)
+IndexScan(ci)
+IndexScan(cct2)
+IndexScan(cct1)
+IndexScan(cc)
+IndexScan(it2)
+IndexScan(mi_idx)
+IndexScan(mk)
+SeqScan(k)
+Leading((((((((((((k mk) mi_idx) it2) cc) cct1) cct2) ci) mi) it1) n) t))
 */
 SELECT MIN(mi.info) AS movie_budget,
        MIN(mi_idx.info) AS movie_votes,
@@ -109,4 +121,6 @@ WHERE cct1.kind = 'cast'
   AND k.id = mk.keyword_id
   AND cct1.id = cc.subject_id
   AND cct2.id = cc.status_id;
+
+
 
