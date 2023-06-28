@@ -11,6 +11,10 @@ NestLoop(mi_idx it t mk)
 NestLoop(mi_idx it t)
 NestLoop(mi_idx it)
 IndexScan(mi_idx)
+IndexScan(k)
+IndexScan(t)
+IndexScan(it)
+IndexScan(mk)
 Leading(((((it mi_idx) t) mk) k))
 */
 SELECT MIN(mi_idx.info) AS rating,
